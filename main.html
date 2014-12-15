@@ -1,0 +1,6 @@
+<section
+	class="" id=""
+	ng-repeat="page in website.pages"
+	data-ng-include data-src="'html/{{ page.template }}.html'"
+	ng-show="tab.isSet('{{ $index }}')">
+</section>
