@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat="page in website.pages" ng-class="{ active: tab.isSet('{{ $index }}') }">
+		<a href ng-click="tab.setTab('{{ $index }}')">{{ page.title }}</a>
+	</li>
+</ul>
