@@ -1,14 +1,19 @@
 <html ng-app="finix">
 	<head>
+		<title>Home</title>
 		<meta charset="utf-8">
-		<title></title>
-		<link type="" rel="" href="">
-		<script type="" src=""></script>
+		<link rel="stylesheet" type="text/css" href="css/{{ website.template }}.css">
+		<link rel="icon" href="images/favicon.png">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="http://code.angularjs.org/1.2.9/angular-animate.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-touch.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	</head>
 	<body ng-controller="WebsiteController as website">
 		<header data-ng-include data-src="'html/header.html'"></header>
 		<main data-ng-include data-src="'html/main.html'"></main>
-
 		<footer data-ng-include data-src="'html/footer.html'"></footer>
 	</body>
 </html>
